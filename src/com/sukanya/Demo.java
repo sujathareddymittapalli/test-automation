@@ -8,8 +8,12 @@ public class Demo {
 		// TODO Auto-generated method stub
 System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Downloads\\Chromedriver.exe");
 WebDriver driver=new ChromeDriver();
-driver.get("http://google.com");
+driver.get("http://www.youtube.com");
 System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());	
+driver.get("http://www.google.com");
+//System.out.println(driver.getPageSource());//
+driver.close();
 	}
 
 }
